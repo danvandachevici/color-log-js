@@ -24,5 +24,8 @@
   "homepage": "https://github.com/toranaga-samma/color-log-js#readme",
   "dependencies": {
     "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "sinon": "^1.17.6"
   }
 }
