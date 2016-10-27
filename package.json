@@ -1,0 +1,28 @@
+{
+  "name": "simple-color-log",
+  "version": "1.0.0",
+  "description": "This is a simple logging function, with colors and timestamps",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toranaga-samma/color-log-js.git"
+  },
+  "keywords": [
+    "logging",
+    "log",
+    "color",
+    "timestamp"
+  ],
+  "author": "Dan Vandachevici <dan@vandachevici.ro>",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/toranaga-samma/color-log-js/issues"
+  },
+  "homepage": "https://github.com/toranaga-samma/color-log-js#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
