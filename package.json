@@ -26,6 +26,7 @@
     "colors": "^1.1.2"
   },
   "devDependencies": {
-    "sinon": "^1.17.6"
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
   }
 }

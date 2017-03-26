@@ -19,11 +19,9 @@ log.setLogLevel = function (loglevelName) {
 	}
 }
 
-var ret = {};
-log.set
 
 for (var method in methods) {
-	ret[method] = (function(method) {
+	log[method] = (function(method) {
 		return function () {
 			var d = new Date();
 			if (options.minimumLoggableLevel > methods[method].importance){
@@ -49,4 +47,4 @@ for (var method in methods) {
 		}
 	})(method)
 }
-module.exports = ret;
+module.exports = log;
