@@ -1,6 +1,6 @@
 {
   "name": "simple-color-log",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a simple logging function, with colors and timestamps",
   "main": "index.js",
   "scripts": {

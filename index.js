@@ -2,20 +2,20 @@ var colors = require('colors');
 var log = {};
 
 var methods = {
-	none: 0,
+	none: {importance: 0},
 	error: {color: 'red', bgcolor: 'bgRed', importance: 1},
 	info: {color: 'cyan', bgcolor: 'bgCyan', importance: 2},
 	debug: {color: 'yellow', bgcolor: 'bgYellow', importance: 3}
 };
 var options = {
-	minimumLoggableLevel: 1
+	maximumLoggableLevel: 1
 };
 
 log.setLogLevel = function (loglevelName) {
 	if (methods[loglevelName]) {
-		options.minimumLoggableLevel = methods[loglevelName];
+		options.maximumLoggableLevel = methods[loglevelName].importance;
 	} else {
-		options.minimumLoggableLevel = 1;
+		options.maximumLoggableLevel = 1; // only show errors
 	}
 }
 
@@ -24,7 +24,7 @@ for (var method in methods) {
 	log[method] = (function(method) {
 		return function () {
 			var d = new Date();
-			if (options.minimumLoggableLevel > methods[method].importance){
+			if (options.maximumLoggableLevel < methods[method].importance){
 				return null;
 			}
 			var datestring = d.getFullYear() + "/" + 
@@ -44,6 +44,7 @@ for (var method in methods) {
 				}
 			}
 			console.log (msg);
+			return true;
 		}
 	})(method)
 }
