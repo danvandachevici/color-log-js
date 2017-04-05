@@ -1,6 +1,8 @@
 A simple and colored log lib
 ============================
 
+[![Build Status](https://travis-ci.org/toranaga-samma/color-log-js.svg?branch=master)](https://travis-ci.org/toranaga-samma/color-log-js)
+
 This lib is intended to only be used in NodeJS.
 It will color your output, and will make sure it gets proper timestamping
 Example:
