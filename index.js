@@ -7,7 +7,7 @@ var methods = {
     debug: {color: 'yellow', bgcolor: 'bgYellow', importance: 3}
 };
 var options = {
-    maximumLoggableLevel: 1
+    maximumLoggableLevel: 3
 };
 
 log.setLogLevel = function (loglevelName) {
